@@ -1,0 +1,72 @@
+create account on heroku and github
+
+dowenlod and install heroku cli
+
+dowenlod and install git 
+
+open anaconda command prompt
+ to create env
+ 
+ conda create -n flask_demo python==3.7
+ conda activate flask_demo
+
+
+select interpiter in the project
+
+install flask liberary
+pip install flask
+write a code and run it on local server
+
+
+pip install gunicorn 
+(it is allow to run app on linux system)
+pip freeze>requirements.txt    ( pip freeze > req.txt)
+
+we need to create "Procfile"
+
+refer website  https://devcenter.heroku.com/articles/django-app-configuration
+
+in this   web: gunicorn main:app
+
+web: gunicorn myproject.wsgi (django)
+
+
+-------------------------link github repo
+
+git init
+git add .
+git commit -m "first commit"
+
+if issue or you install git first time {
+
+if you get git is not reg error (if you install git first time
+then you shoud config email and password)
+
+git config --global user.email "github registared mail id"
+git config --global user.name "username of github"
+}
+
++++++++++++++
+git init
+git add .
+git commit -m "first commit"
+
+++++++
+
+git branch -M main
+git remote add origin https://github.com/ay36808/testing-heroku.git
+git push -u origin main
+
+
+login to heroku and create app 
+
+heroku login -i 
+give the email and password of heroku site
+
+heroku git:remote -a flask-testing-again
+
+git push heroku main
+
+
+
+

@@ -1,0 +1,12 @@
+body{
+    background-color: whitesmoke;
+}
+#id_gender,#id_city{
+    list-style: none;
+    display: inline-flex;
+
+    
+}
+#id_gender > li{
+    padding-left: 10px;
+}
