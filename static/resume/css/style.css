@@ -1,8 +1,5 @@
 body{
-    background-color: #d3d3d3;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    font-size: 14px;
+    background-color: whitesmoke;
 }
 #id_gender,#id_city{
     list-style: none;
