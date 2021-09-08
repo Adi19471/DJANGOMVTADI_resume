@@ -26,6 +26,6 @@ class Resume(models.Model):
     mobile = models.PositiveIntegerField()
     email = models.EmailField()
     job_location = models.CharField(max_length=120)
-    profile_image = models.ImageField(upload_to = 'images',blank=True)
+    profile_image = models.ImageField(upload_to = 'images',blank=True,null=True)
     job_state = models.CharField(max_length=20)
     my_file = models.FileField(upload_to='doc',blank=True)

@@ -1,5 +1,5 @@
 from django import forms
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 # Create your views here.
 from .models import Resume 
@@ -18,7 +18,8 @@ class HomeView(View):
         form = ResumeForm(request.POST,request.FILES)
         if form.is_valid():
             form.save()
-        return render(request,'resume/home.html',{'form':form})
+            return redirect('home')
+        # return render(request,'resume/home.html',{'form':form})
 
 
 
