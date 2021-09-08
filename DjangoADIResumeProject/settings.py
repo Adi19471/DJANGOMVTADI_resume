@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'resumeapp',
+    # third party media unused data saved
+    'django_unused_media',
 ]
 
 MIDDLEWARE = [
